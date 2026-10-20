@@ -97,20 +97,37 @@ const defaultData = {
       technologies: "ASP.NET MVC · Database"
     },
     {
-      name: "Payment Integrations",
+      name: "Payment Integrations — IMS",
       description: "Integrated NPS, Fonepay, and eSewa payment workflows with maker-checker approval functionality.",
       technologies: "Payment APIs · Transaction Workflows"
     },
     {
-      name: "Automated Reporting & Scheduling",
+      name: "Automated Reporting & Scheduling — IMS",
       description: "Built reusable CRON scheduling and automated sales report email delivery for SalesBerry and KKMart.",
       technologies: ".NET · CRON · SMTP"
     },
     {
-      name: "Nimbus Vendor Portal",
+      name: "Nimbus Vendor Portal — IMS",
       description: "Built a centralized platform for vendor product management and report access.",
       technologies: ".NET · Enterprise Software"
     },
+    
+{
+  name: "Patanjali India — SQL Server to PostgreSQL Migration — IMS",
+  description: "Worked on migrating existing application code and database queries from SQL Server to PostgreSQL, adapting SQL syntax and ensuring compatibility with PostgreSQL.",
+  technologies: "SQL Server · PostgreSQL · Database Migration · SQL"
+},
+{
+  name: "Phone Hisab — Inventory & Financial Management System — IMS",
+  description: "Worked on Phone Hisab, an application designed to manage inventory, cash transactions, credit bills, and financial records. The system helps track sales and transactions, maintain outstanding credit balances, and monitor profit and loss for better business financial management.",
+  technologies: "Inventory Management · Cash Transactions · Credit Billing · Financial Reporting · Profit & Loss Tracking"
+},
+{
+  name: "Restaurant Table Booking System — IMS",
+  description: "Worked on a restaurant reservation platform that enables users to discover different restaurants and book tables conveniently. Contributed to application development and restaurant booking workflows.",
+  technologies: ".NET · REST APIs · SQL Server · Restaurant Management"
+},
+
     {
       name: "Airport Camera-Based Parking System",
       description: "Contributed to an ANPR parking solution with image processing and transactional APIs.",

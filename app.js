@@ -174,22 +174,31 @@ function renderPortfolio() {
     document.getElementById(id).href = safeLinkedIn(data.linkedin);
   }
 
+  
   const photo = document.getElementById("profilePhoto");
   const placeholder = document.getElementById("photoPlaceholder");
 
-  if (data.photo) {
-    photo.src = data.photo;
-    photo.hidden = false;
-    placeholder.hidden = true;
-    photo.onerror = () => {
+  const defaultPhoto = "./My%20Image%202026-10-20%20at%2022.37.11.jpeg";
+  const fallbackPhoto = "./default-profile.png";
+
+  photo.onerror = () => {
+    if (photo.src.endsWith("default-profile.png")) {
       photo.hidden = true;
       placeholder.hidden = false;
-    };
-  } else {
-    photo.removeAttribute("src");
-    photo.hidden = true;
-    placeholder.hidden = false;
-  }
+      return;
+    }
+
+    photo.src = fallbackPhoto;
+  };
+
+  photo.onload = () => {
+    photo.hidden = false;
+    placeholder.hidden = true;
+  };
+
+  photo.hidden = false;
+  photo.src = data.photo || defaultPhoto;
+
 
   const cvLink = document.getElementById("cvLink");
   if (data.cv) {

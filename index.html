@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Er. Surendra Prasad Nishad, Software Engineer specializing in .NET and full-stack development.">
+  <title>Surendra Prasad Nishad | Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="brand">SPN<span>.</span></a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="button button-outline" href="admin.html">Admin Login</a>
+  </nav>
+
+  <main>
+    <section class="hero section" id="about">
+      <div class="hero-content">
+        <p class="eyebrow">SOFTWARE ENGINEER · KATHMANDU, NEPAL</p>
+        <h1>Hi, I'm <span id="heroName">Surendra Prasad Nishad</span></h1>
+        <h2 id="heroTitle">.NET Developer & Full-Stack Engineer</h2>
+        <p id="heroSummary" class="muted">
+          Building secure, scalable enterprise applications, REST APIs,
+          ERP solutions, and modern web applications.
+        </p>
+        <div class="actions">
+          <a class="button" href="#projects">Explore My Work</a>
+          <a class="button button-outline" id="cvLink" href="#" hidden
+             target="_blank" rel="noopener">Download CV</a>
+        </div>
+        <div class="social-links">
+          <a id="linkedinLink"
+             href="https://www.linkedin.com/in/surendraprasadnishad/"
+             target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="#contact">Contact Me ↘</a>
+        </div>
+      </div>
+      <div class="profile-frame">
+        <img id="profilePhoto" src="" alt="Surendra Prasad Nishad"
+             hidden>
+        <div id="photoPlaceholder" class="photo-placeholder">SPN</div>
+        <div class="profile-caption">
+          <span class="status-dot"></span> Open to professional opportunities
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <p class="eyebrow">WHAT I WORK WITH</p>
+      <h2>Technical Skills</h2>
+      <div id="skillsList" class="skill-grid"></div>
+    </section>
+
+    <section class="section" id="experience">
+      <p class="eyebrow">MY JOURNEY</p>
+      <h2>Professional Experience</h2>
+      <div id="experienceList" class="timeline"></div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow">SELECTED WORK</p>
+      <h2>Featured Projects</h2>
+      <div id="projectList" class="project-grid"></div>
+    </section>
+
+    <section class="section education">
+      <p class="eyebrow">ACADEMIC BACKGROUND</p>
+      <h2>Education</h2>
+      <div id="educationList"></div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Have a project in mind?</h2>
+      <p class="muted">I'm interested in software engineering and
+        full-stack development opportunities.</p>
+      <a class="button" id="contactLinkedin"
+         href="https://www.linkedin.com/in/surendraprasadnishad/"
+         target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+      <p class="muted small" id="locationText">New Baneshwor, Kathmandu, Nepal</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> <span id="footerName">Surendra Prasad Nishad</span>.
+      Built with HTML, CSS & JavaScript.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio Admin | Surendra Prasad Nishad</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="index.html">SPN<span>.</span></a>
+    <a href="index.html">View Public Portfolio ↗</a>
+  </nav>
+
+  <main class="admin-container">
+    <h1>Portfolio Admin</h1>
+    <p class="muted">Manage your portfolio content and files.</p>
+
+    <section class="panel" id="loginPanel">
+      <h2>Administrator Login</h2>
+      <p class="notice">Enter your administrator credentials.</p>
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input id="username" autocomplete="username" required>
+        <label for="password">Password</label>
+        <input id="password" type="password"
+               autocomplete="current-password" required>
+        <p id="loginMessage" class="error" role="status"></p>
+        <button class="button" type="submit">Log In</button>
+      </form>
+    </section>
+
+    <section id="editorPanel" hidden>
+      <div class="panel">
+        <h2>Edit Profile</h2>
+        <form id="profileForm">
+          <label for="name">Full name</label>
+          <input id="name" required>
+          <label for="title">Professional title</label>
+          <input id="title" required>
+          <label for="summary">Professional summary</label>
+          <textarea id="summary" required></textarea>
+          <div class="form-row">
+            <div>
+              <label for="location">Location</label>
+              <input id="location">
+            </div>
+            <div>
+              <label for="linkedin">LinkedIn URL</label>
+              <input id="linkedin" type="url">
+            </div>
+          </div>
+          <button class="button" type="submit">Save Profile</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Update Experience, Skills & Projects</h2>
+        <p class="notice">
+          Edit the JSON below. Keep the field names and JSON syntax valid.
+          Experience entries need role, company, dates, and details.
+          Project entries need name, description, and technologies.
+        </p>
+        <form id="contentForm">
+          <label for="skills">Skills (one per line)</label>
+          <textarea id="skills"></textarea>
+          <label for="experience">Experience JSON</label>
+          <textarea id="experience" spellcheck="false"></textarea>
+          <label for="projects">Projects JSON</label>
+          <textarea id="projects" spellcheck="false"></textarea>
+          <label for="education">Education JSON</label>
+          <textarea id="education" spellcheck="false"></textarea>
+          <p id="contentMessage" role="status"></p>
+          <button class="button" type="submit">Save Content</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <h2>Profile Photo</h2>
+        <p class="notice">Choose a small JPG, PNG, or WebP image (up to 1 MB).</p>
+        <label for="photoUpload">Select profile photo</label>
+        <input id="photoUpload" type="file"
+               accept="image/jpeg,image/png,image/webp">
+        <button id="savePhoto" class="button" type="button">Save Photo</button>
+      </div>
+
+      <div class="panel">
+        <h2>Update CV</h2>
+        <p class="notice">Choose a PDF file up to 1 MB.</p>
+        <label for="cvUpload">Select CV (PDF)</label>
+        <input id="cvUpload" type="file" accept="application/pdf">
+        <button id="saveCV" class="button" type="button">Save CV</button>
+      </div>
+
+      <div class="panel">
+        <h2>Backup & Restore</h2>
+        <p class="notice">Export a backup before making major changes.</p>
+        <button id="exportData" class="button button-outline" type="button">
+          Export Portfolio JSON
+        </button>
+        <label for="importData">Restore portfolio JSON backup</label>
+        <input id="importData" type="file" accept="application/json,.json">
+        <button id="restoreData" class="button button-outline" type="button">
+          Restore Backup
+        </button>
+        <p id="backupMessage" role="status"></p>
+      </div>
+
+      <div class="panel">
+        <button id="logout" class="button button-outline" type="button">
+          Log Out
+        </button>
+        <p class="notice">
+          Changes are saved only in this browser. See the deployment notes below.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

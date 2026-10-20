@@ -110,8 +110,7 @@ const defaultData = {
       name: "Nimbus Vendor Portal — IMS",
       description: "Built a centralized platform for vendor product management and report access.",
       technologies: ".NET · Enterprise Software"
-    },
-    
+    }, 
 {
   name: "Patanjali India — SQL Server to PostgreSQL Migration — IMS",
   description: "Worked on migrating existing application code and database queries from SQL Server to PostgreSQL, adapting SQL syntax and ensuring compatibility with PostgreSQL.",
